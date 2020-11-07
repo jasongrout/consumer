@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "@jupyterlab/application": "^3.0.0-rc.2",
-    "provider": "file:/Users/jgrout6/projects/app/testExt/provider"
+    "provider": "0.1.0"
   },
   "devDependencies": {
     "@jupyterlab/builder": "^3.0.0-rc.2",
@@ -65,7 +65,10 @@
     "extension": true,
     "outputDir": "consumer/labextension",
     "sharedPackages": {
-      "provider": "0.1.0"
+       "provider": {"bundled": false, "singleton": true}
     }
+  },
+  "publishConfig": {
+    "registry": "http://localhost:4873"
   }
 }
