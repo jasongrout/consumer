@@ -65,7 +65,11 @@
     "extension": true,
     "outputDir": "consumer/labextension",
     "sharedPackages": {
-       "provider": {"requiredVersion": "0.1.0", "bundled": false, "singleton": true}
+      "provider": {
+        "requiredVersion": "0.1.0",
+        "bundled": false,
+        "singleton": true
+      }
     }
   },
   "publishConfig": {
